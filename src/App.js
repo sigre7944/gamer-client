@@ -10,7 +10,7 @@ class App extends React.Component {
         GAMER AI uhuhuh
 
         <BrowserRouter>
-          <Route path={'/game'} component={GameView}/>
+          <Route path={'/game'} component={GameView} />
         </BrowserRouter>
       </div>
     )
