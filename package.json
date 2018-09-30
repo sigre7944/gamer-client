@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "standard --fix",
     "eject": "react-scripts eject",
     "standard": "standard --fix"
   },
@@ -33,6 +33,13 @@
     "globals": [
       "it",
       "fetch"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
     ]
   }
 }
