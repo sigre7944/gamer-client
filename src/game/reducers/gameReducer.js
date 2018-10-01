@@ -1,4 +1,3 @@
-
 function getDefaultState () {
   return {
     nothingHereYet: true
