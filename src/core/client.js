@@ -19,7 +19,7 @@ export function postHappiness (happinessRequest) {
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(happinessRequest),
+    body: JSON.stringify(happinessRequest)
   })
     .then(responseJson)
 }
