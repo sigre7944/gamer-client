@@ -28,7 +28,6 @@ class App extends React.Component {
   }
 
   renderRoot () {
-
     const { happinesses } = this.props
 
     const tableItems = happinesses.map(({ id, level }) => (
@@ -51,18 +50,18 @@ class App extends React.Component {
           CREATE HAPPINESS
         </Button>
 
-        <hr/>
+        <hr />
 
         <Grid>
           <Table striped bordered condensed hover>
             <thead>
-            <tr>
-              <th>id</th>
-              <th>level</th>
-            </tr>
+              <tr>
+                <th>id</th>
+                <th>level</th>
+              </tr>
             </thead>
             <tbody>
-            {tableItems}
+              {tableItems}
             </tbody>
           </Table>
         </Grid>
@@ -75,8 +74,8 @@ class App extends React.Component {
       <div className='App'>
         <BrowserRouter>
           <Switch>
-            <Route path={'/'} exact render={this.renderRoot}/>
-            <Route path={'/game'} component={GameView}/>
+            <Route path={'/'} exact render={this.renderRoot} />
+            <Route path={'/game'} component={GameView} />
           </Switch>
         </BrowserRouter>
       </div>
