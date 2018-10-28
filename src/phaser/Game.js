@@ -17,6 +17,8 @@ export default class Game extends Phaser.Game {
       ...config
     }
 
+    let cursors = {}
+
     super(config)
 
     // Load BootScene

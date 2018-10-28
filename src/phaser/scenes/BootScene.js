@@ -11,6 +11,7 @@ export default class BootScene extends Phaser.Scene {
     // Load player texture from data URI provided by Webpack
     this.textures.addBase64('player', playerTexture)
     this.load.image('player')
+
   }
 
   create () {
